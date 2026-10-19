@@ -1,0 +1,7 @@
+Coloque aqui suas fotos e capas de projetos.
+
+Depois, abra content.js e preencha o campo src do item correspondente.
+Exemplo: "src": "images/retrato.jpg"
+
+O caminho vazio mantém a moldura sem imagem.
+Veja o guia README.md na pasta principal para mais exemplos.

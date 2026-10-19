@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Um portfólio de design com personalidade. Ideias, processos e projetos em um caderno aberto.">
+    <title>Sant — Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- CABEÇALHO: navegação, idioma e tema -->
+    <header>
+      <a class="logo" href="#home" aria-label="Início">✳</a>
+      <nav>
+        <a class="active" href="#home" data-t="home"></a>
+        <a href="#about" data-t="about"></a>
+        <a href="#work" data-t="work"></a>
+        <a href="#play" data-t="play"></a>
+      </nav>
+      <div class="header-end">
+        <label class="language">
+          <span aria-hidden="true">◎</span>
+          <select id="language" aria-label="Idioma da página">
+            <option value="pt-BR">Portugues Br</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+          </select>
+        </label>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Ativar tema escuro" aria-pressed="false">
+          <span aria-hidden="true">☾</span>
+        </button>
+        <a class="contact-link" href="#contact" data-t="contact"></a>
+      </div>
+    </header>
+    <main>
+      <!-- INÍCIO: apresentação e nome principal -->
+      <div class="section-layer">
+        <section id="home" class="hero">
+          <span class="sticker mint top-left" data-t="made"></span>
+          <span class="sticker yellow top-right" data-t="details"></span>
+          <p class="hand intro" data-t="nameIntro"></p>
+          <!-- Nome definido em content.js → siteContent.name -->
+          <h1 id="siteName">Sant</h1>
+          <div class="name-notes">
+            <span class="note yellow hand" data-t="role"></span>
+            <span class="availability" data-t="available"></span>
+            <span class="note mint hand" data-t="location"></span>
+          </div>
+          <span class="doodle target">◎</span>
+          <h2 data-t="headline"></h2>
+          <a class="button" href="#contact">
+            <span>↗</span>
+            <span data-t="talk"></span>
+          </a>
+          <p class="hero-foot mono" data-t="portfolio"></p>
+        </section>
+      </div>
+      <!-- SOBRE: biografia, retrato e espaço de trabalho -->
+      <div class="section-layer">
+        <section id="about" class="about">
+          <p class="section-note hand" data-t="aboutNote"></p>
+          <div class="about-grid">
+            <figure class="polaroid left">
+              <div class="photo-placeholder" data-image="portrait">
+                <span>＋</span>
+                <small data-t="portrait"></small>
+              </div>
+              <figcaption class="hand" data-t="me"></figcaption>
+            </figure>
+            <div class="bio">
+              <h2 class="hand" data-t="whatsup"></h2>
+              <p class="hand bio-text" data-t="bio"></p>
+              <div class="skills">
+                <span class="yellow" data-t="skill1"></span>
+                <b class="yellow">✦</b>
+                <span class="mint" data-t="skill2"></span>
+                <b class="mint">✿</b>
+                <span class="pink" data-t="skill3"></span>
+                <b class="pink">✳</b>
+                <span class="blue" data-t="skill4"></span>
+                <b class="blue">◉</b>
+              </div>
+            </div>
+            <figure class="polaroid right">
+              <div class="photo-placeholder" data-image="workspace">
+                <span>＋</span>
+                <small data-t="workspace"></small>
+              </div>
+              <figcaption class="hand" data-t="corner"></figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+      <!-- PROJETOS: capas, títulos e descrições -->
+      <div class="section-layer">
+        <section id="work" class="work">
+          <div class="work-heading">
+            <p class="hand" id="projectsHeading" data-t="selected"></p>
+            <span class="mono">01 — 03 ↘</span>
+          </div>
+          <div class="folder-tabs" role="tablist" aria-labelledby="projectsHeading">
+            <button type="button" id="projectTab1" class="project-tab blue" role="tab" aria-controls="project1" aria-selected="true" tabindex="0" data-tab="0" data-t="tab1"></button>
+            <button type="button" id="projectTab2" class="project-tab " role="tab" aria-controls="project2" aria-selected="false" tabindex="-1" data-tab="1" data-t="tab2"></button>
+            <button type="button" id="projectTab3" class="project-tab yellow" role="tab" aria-controls="project3" aria-selected="false" tabindex="-1" data-tab="2" data-t="tab3"></button>
+          </div>
+          <!-- As três pastas ocupam o mesmo espaço; a aba selecionada vem para a frente. -->
+          <div class="project-stack">
+            <article id="project1" role="tabpanel" aria-labelledby="projectTab1" tabindex="0" class="project blue">
+              <div class="project-copy">
+                <p class="mono" data-t="category1"></p>
+                <h2 data-project-title="0">Tandem</h2>
+                <p data-t="desc1"></p>
+                <button class="text-link" data-project="0" data-t="view"></button>
+                <span class="project-number">01</span>
+              </div>
+              <div class="project-image">
+                <div class="image-space" data-image="project1">
+                  <span>＋</span>
+                  <strong data-t="cover"></strong>
+                  <small data-t="imageHint"></small>
+                </div>
+              </div>
+            </article>
+            <article id="project2" role="tabpanel" aria-labelledby="projectTab2" tabindex="0" class="project dark">
+              <div class="project-copy">
+                <p class="mono" data-t="category2"></p>
+                <h2 data-project-title="1">Forge</h2>
+                <p data-t="desc2"></p>
+                <button class="text-link" data-project="1" data-t="view"></button>
+                <span class="project-number">02</span>
+              </div>
+              <div class="project-image">
+                <div class="image-space" data-image="project2">
+                  <span>＋</span>
+                  <strong data-t="cover"></strong>
+                  <small data-t="imageHint"></small>
+                </div>
+              </div>
+            </article>
+            <article id="project3" role="tabpanel" aria-labelledby="projectTab3" tabindex="0" class="project yellow">
+              <div class="project-copy">
+                <p class="mono" data-t="category3"></p>
+                <h2 data-project-title="2">Forma</h2>
+                <p data-t="desc3"></p>
+                <button class="text-link" data-project="2" data-t="view"></button>
+                <span class="project-number">03</span>
+              </div>
+              <div class="project-image">
+                <div class="image-space" data-image="project3">
+                  <span>＋</span>
+                  <strong data-t="cover"></strong>
+                  <small data-t="imageHint"></small>
+                </div>
+              </div>
+            </article>
+          </div>
+          <p class="demo-note mono" data-t="demo"></p>
+        </section>
+      </div>
+      <!-- LABORATÓRIO: espaços para experimentos -->
+      <div class="section-layer">
+        <section id="play" class="play">
+          <div>
+            <p class="hand" data-t="offscript"></p>
+            <h2 data-t="playTitle"></h2>
+          </div>
+          <div class="play-grid">
+            <div class="mini-frame" data-image="experiment1">
+              <span>＋</span>
+              <p data-t="experiment1"></p>
+            </div>
+            <div class="mini-frame" data-image="experiment2">
+              <span>＋</span>
+              <p data-t="experiment2"></p>
+            </div>
+            <div class="mini-frame" data-image="experiment3">
+              <span>＋</span>
+              <p data-t="experiment3"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- CONTATO -->
+      <div class="section-layer">
+        <section id="contact" class="contact">
+          <span class="sticker mint" data-t="next"></span>
+          <h2 data-t="contactTitle"></h2>
+          <p class="hand" data-t="contactText"></p>
+          <div class="email-placeholder mono" data-t="email"></div>
+          <span class="contact-flower">✳</span>
+        </section>
+      </div>
+    </main>
+    <!-- RODAPÉ -->
+    <footer>
+      <a href="#home" id="copyright">Sant © 2026</a>
+      <span class="hand" data-t="footer"></span>
+      <a href="#home" data-t="back"></a>
+    </footer>
+    <!-- JANELA DE DETALHES DO PROJETO -->
+    <dialog id="projectDialog">
+      <button class="close" aria-label="Fechar">×</button>
+      <p class="mono" data-t="caseStudy"></p>
+      <h2 id="dialogTitle"></h2>
+      <p id="dialogDescription"></p>
+      <div class="dialog-placeholder" id="dialogImage">
+        <span>＋</span>
+        <p data-t="casePlaceholder"></p>
+      </div>
+      <p class="hand" data-t="caseNote"></p>
+    </dialog>
+    <!-- Carregue o conteúdo antes do código de funcionamento. -->
+    <script src="content.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
