@@ -14,7 +14,7 @@ const siteContent = {
       "title": "Boa noite",
       "descriptionKey": "desc1",
       "imageKey": "project1",
-      "url": "boa-noite.html"
+      "url": "blog/index.html"
     },
     {
       "title": "Forge",

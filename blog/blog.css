@@ -1,7 +1,7 @@
 /* Identidade noturna do Blog, independente dos temas do portfólio. */
 @font-face {
   font-family: 'Pixeboy';
-  src: url('fonts/Pixeboy.ttf') format('truetype');
+  src: url('../fonts/Pixeboy.ttf') format('truetype');
   font-display: swap;
 }
 :root {

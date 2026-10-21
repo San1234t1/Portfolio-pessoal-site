@@ -339,20 +339,24 @@ pelo site e não são necessários para abrir o HTML diretamente.
 
 ## Blog Boa noite
 
-O Projeto 01 abre `boa-noite.html`; os projetos 02 e 03 continuam como exemplos.
+O Projeto 01 abre `blog/index.html`; os projetos 02 e 03 continuam como exemplos.
 O título fica em `siteContent.projects[0].title`, e o destino em
 `siteContent.projects[0].url`, dentro de `content.js`. A descrição do cartão
 fica em `translations['pt-BR'].desc1` (e nas versões `en` e `es`). O link usa
 `readBlog` nas três traduções. O conto permanece no idioma original, português.
 
 Para preencher a descrição do Blog, edite o parágrafo vazio
-`<p id="blogDescription" class="blog-description"></p>` em `boa-noite.html`.
+`<p id="blogDescription" class="blog-description"></p>` em `blog/index.html`.
 O conto está nos parágrafos dentro de `<div class="story-body">` no mesmo
 arquivo. O nome do autor continua vindo de `siteContent.name`.
 
 As cores da página ficam nas variáveis `--night`, `--text`, `--muted` e
-`--accent` em `blog.css`. A lua decorativa é um SVG em grade pixelada no HTML,
+`--accent` em `blog/blog.css`. A lua decorativa é um SVG em grade pixelada no HTML,
 sem arquivo de imagem ou geração por IA. Sua posição e opacidade ficam em
 `.moon`, no CSS. Basta salvar e recarregar o navegador para ver as alterações.
 
 As observações de continuidade e narrativa estão em `work/revisao-o-viajante.md`.
+
+Os arquivos próprios do Blog ficam na pasta `blog/`: `index.html` (página e conto),
+`blog.css` (aparência) e `blog.js` (comportamento). O conteúdo de identidade
+continua compartilhado em `../content.js`, e a fonte em `../fonts/Pixeboy.ttf`.
