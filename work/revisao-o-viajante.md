@@ -1,6 +1,6 @@
 # Revisão narrativa — O viajante
 
-A versão revisada está em `boa-noite.html`. Foram corrigidas ortografia,
+A versão revisada está em `blog/index.html`. Foram corrigidas ortografia,
 concordância, pontuação e divisões de parágrafo, preservando a voz informal,
 o narrador perturbador e o encerramento. Katarine é a grafia adotada.
 Os números 28 e 18 foram mantidos por instrução do autor.

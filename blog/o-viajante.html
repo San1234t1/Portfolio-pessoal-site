@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Boa noite — blogue pessoal de contos de Sant.">
+    <meta name="description" content="O viajante — primeiro conto de ficção científica macabra do Blog Boa noite.">
     <title>Boa noite — O viajante</title>
     <link rel="stylesheet" href="blog.css">
   </head>
@@ -16,21 +16,15 @@
       <path fill="#c4c4ce" d="M12 8h3v2h-3zM4 10h2v2H4zm13-4h2v2h-2z"/>
     </svg>
     <header class="blog-header">
-      <a href="index.html#work">← Voltar ao portfólio</a>
-      <span>UM BLOGUE DE <span id="blogAuthor">Sant</span></span>
+      <a href="index.html?origem=conto">← Voltar ao Blog</a>
+      <span>UM Blog DE <span id="blogAuthor">Sant</span></span>
     </header>
     <main>
-      <section class="blog-intro" aria-labelledby="blogTitle">
-        <p class="eyebrow">CONTOS PARA DEPOIS DO ESCURO</p>
-        <h1 id="blogTitle">Boa noite<span aria-hidden="true">.</span></h1>
-        <!-- Descrição do blogue: escreva seu texto dentro do parágrafo abaixo. -->
-        <p id="blogDescription" class="blog-description"></p>
-        <a class="read-link" href="#o-viajante">Primeiro conto: O viajante ↓</a>
-      </section>
       <article id="o-viajante" aria-labelledby="storyTitle">
         <header class="story-header">
           <p class="eyebrow">01 / FICÇÃO CIENTÍFICA MACABRA</p>
-          <h2 id="storyTitle">O viajante</h2>
+          <h1 id="storyTitle" class="story-title" tabindex="-1">O viajante</h1>
+          <p class="content-rating" aria-label="Recomendado para maiores de 18 anos">+18</p>
           <p class="story-status">Primeiro episódio · Rascunho</p>
         </header>
         <div class="story-body">
@@ -53,13 +47,11 @@
           <p>Nesses 18 anos, eu já assisti a incontáveis eu-suicídios. Embora, até pouco tempo, eu já achasse isso normal, alguns me fizeram vomitar por dias. E esse último me fez escrever este relato.</p>
           <p>Na verdade, isto é um aviso. Um aviso para você parar de pensar!</p>
         </div>
-        <a class="read-link" href="#topo">Voltar ao início ↑</a>
+        <a class="read-link" href="index.html?origem=conto">← Voltar aos contos</a>
       </article>
     </main>
-    <footer>Boa noite. <a href="index.html#work">Voltar ao portfólio ↗</a></footer>
-    <script src="content.js"></script>
-    <script>
-      document.getElementById('blogAuthor').textContent = siteContent.name;
-    </script>
+    <footer>Boa noite. <a href="../index.html#work">Voltar ao portfólio ↗</a></footer>
+    <script src="../content.js"></script>
+    <script src="blog.js"></script>
   </body>
 </html>

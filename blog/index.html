@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Boa noite — Blog pessoal de contos de Sant.">
+    <title>Boa noite — Blog de contos</title>
+    <link rel="stylesheet" href="blog.css">
+  </head>
+  <body id="topo">
+    <!-- Lua decorativa desenhada em blocos, sem imagem externa. -->
+    <svg class="moon" viewBox="0 0 24 24" aria-hidden="true" shape-rendering="crispEdges">
+      <path fill="#b7b9cb" d="M8 1h8v1h3v2h2v3h1v3h1v5h-1v3h-2v3h-3v1H7v-1H4v-2H2v-4H1V9h1V6h2V3h4z"/>
+      <path fill="#e0dfd6" d="M8 1h8v1h3v2h2v3h1v7h-2v3h-3v2H8v-1H5v-3H3V8h1V5h4z"/>
+      <path fill="#9295af" d="M7 5h4v3H7zm8 7h4v4h-4zM6 14h3v2H6zm7-11h2v2h-2zM9 19h4v2H9z"/>
+      <path fill="#c4c4ce" d="M12 8h3v2h-3zM4 10h2v2H4zm13-4h2v2h-2z"/>
+    </svg>
+    <header class="blog-header">
+      <a href="../index.html#work">← Voltar ao portfólio</a>
+      <span>UM Blog DE <span id="blogAuthor">Sant</span></span>
+    </header>
+    <main>
+      <section class="blog-intro" aria-labelledby="blogTitle">
+        <p class="eyebrow">CONTOS PARA DEPOIS DO ESCURO</p>
+        <h1 id="blogTitle">Boa noite<span aria-hidden="true">.</span></h1>
+
+        <!-- Descrição do Blog -->
+
+        <p id="blogDescription" class="blog-description">Minha namorada sempre diz que meus sonhos parecem roteiros de filmes, então eu finalmente decidi escrever sobre eles. Este Blog é um espaço para compartilhar essas histórias. Peço por favor que tenha cuidado ao ler antes de dormir, tudo escrito aqui foi baseado em experiências reais, dentro de mim, e eu não posso garantir que não possam infiltrar em você tambem.</p>
+        <a class="read-link" href="o-viajante.html">Primeiro conto: O viajante →</a>
+      </section>
+      <article id="o-viajante" aria-labelledby="storyTitle">
+        <header class="story-header">
+          <p class="eyebrow">01 / FICÇÃO CIENTÍFICA MACABRA</p>
+          <h2 id="storyTitle"><a href="o-viajante.html">O viajante</a></h2>
+          <p class="content-rating" aria-label="Recomendado para maiores de 18 anos">+18</p>
+          <p class="story-status">Primeiro episódio · Rascunho</p>
+        </header>
+        <a class="read-link" href="o-viajante.html">Ler o conto →</a>
+      </article>
+    </main>
+    <footer>Boa noite. <a href="../index.html#work">Voltar ao portfólio ↗</a></footer>
+    <!-- Aviso editorial apresentado a cada abertura do Blog. -->
+    <dialog id="ageNotice" class="age-notice" aria-labelledby="ageNoticeTitle" aria-describedby="ageNoticeDescription">
+      <p class="eyebrow">BOA NOITE / ANTES DE ENTRAR</p>
+      <span class="age-badge" aria-label="18 anos ou mais">18+</span>
+      <h2 id="ageNoticeTitle">Nem todo conto<br>é para toda idade.</h2>
+      <p id="ageNoticeDescription">Conteúdo recomendado para maiores de 18 anos. Os contos incluem descrições de suicídio, violência e mutilação, além de referências a coerção sexual.</p>
+      <p class="age-note">Recomendação editorial do autor.</p>
+      <div class="age-actions">
+        <button id="continueReading" type="button" autofocus>Entendi, continuar lendo →</button>
+        <a href="../index.html#work">Voltar ao portfólio</a>
+      </div>
+    </dialog>
+    <script src="../content.js"></script>
+    <script src="blog.js"></script>
+  </body>
+</html>
