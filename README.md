@@ -1,13 +1,6 @@
 # Portfólio pessoal — guia de edição
 
-Este site funciona localmente, sem instalação de dependências e sem publicação.
-Abra esta pasta no VS Code e edite os arquivos abaixo. Salve com `Ctrl+S` e
-recarregue a página no navegador. Se uma alteração não aparecer, use `Ctrl+F5`.
-
 ## Personalização rápida
-
-Trabalhe na pasta `C:\Users\Usuario\Desktop\Portfolio pessoal site`, que contém
-a versão atual do portfólio. Abra essa pasta no VS Code em **Arquivo → Abrir Pasta**.
 
 Siga esta ordem para deixar o site com a sua identidade:
 
@@ -345,10 +338,9 @@ O título fica em `siteContent.projects[0].title`, e o destino em
 fica em `translations['pt-BR'].desc1` (e nas versões `en` e `es`). O link usa
 `readBlog` nas três traduções. O conto permanece no idioma original, português.
 
-Para preencher a descrição do Blog, edite o parágrafo vazio
-`<p id="blogDescription" class="blog-description"></p>` em `blog/index.html`.
-O conto está nos parágrafos dentro de `<div class="story-body">` no mesmo
-arquivo. O nome do autor continua vindo de `siteContent.name`.
+Para editar a descrição do Blog, altere o texto do parágrafo `id="blogDescription"`
+em `blog/index.html`. O conto está nos parágrafos dentro de
+`<div class="story-body">` em `blog/o-viajante.html`. O nome do autor continua vindo de `siteContent.name`.
 
 As cores da página ficam nas variáveis `--night`, `--text`, `--muted` e
 `--accent` em `blog/blog.css`. A lua decorativa é um SVG em grade pixelada no HTML,
@@ -357,6 +349,21 @@ sem arquivo de imagem ou geração por IA. Sua posição e opacidade ficam em
 
 As observações de continuidade e narrativa estão em `work/revisao-o-viajante.md`.
 
-Os arquivos próprios do Blog ficam na pasta `blog/`: `index.html` (página e conto),
+Os arquivos próprios do Blog ficam na pasta `blog/`: `index.html` (apresentação e chamada do conto), `o-viajante.html` (conto),
 `blog.css` (aparência) e `blog.js` (comportamento). O conteúdo de identidade
 continua compartilhado em `../content.js`, e a fonte em `../fonts/Pixeboy.ttf`.
+
+### Aviso de idade do Blog
+
+O aviso de recomendação de 18 anos aparece somente na entrada da página inicial
+do Blog. Não aparece nos contos nem no retorno deles à página inicial.
+Os links de retorno usam `index.html?origem=conto`; preserve esse parâmetro.
+O botão Voltar do navegador também não reabre o aviso.
+Edite os textos no bloco `id="ageNotice"` de `blog/index.html`.
+A aparência fica nas regras `.age-notice` de `blog/blog.css`.
+O botão de continuar e a tecla Escape fecham o aviso; o link de saída volta
+ao portfólio. A recomendação é editorial e não verifica a idade do visitante.
+
+A indicação `+18` fica abaixo do título, na chamada da página inicial e na
+página do conto. Edite o parágrafo `.content-rating` em cada HTML para alterá-la;
+sua aparência fica em `blog/blog.css`. Basta salvar e recarregar.

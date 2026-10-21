@@ -37,7 +37,7 @@ const siteContent = {
       "alt": "Meu espaço de trabalho"
     },
     "project1": {
-      "src": "",
+      "src": "images/image.png",
       "alt": "Capa do Blog Boa noite"
     },
     "project2": {

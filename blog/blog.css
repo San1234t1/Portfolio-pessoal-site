@@ -101,6 +101,20 @@ h2 {
   color: var(--muted);
   font: 12px/1.8 monospace;
 }
+/* Título e faixa etária compartilhados pela chamada e pela página do conto. */
+.story-title {
+  margin: 18px 0;
+  font: 400 clamp(40px, 8vw, 64px)/1.15 Georgia, 'Times New Roman', serif;
+  letter-spacing: -2px;
+}
+.content-rating {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 6px 10px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font: 700 14px/1 monospace;
+}
 .story-body {
   margin: 48px 0;
   font-size: clamp(18px, 2vw, 20px);
@@ -113,6 +127,74 @@ h2 {
 footer {
   border-top: 1px solid #353746;
   color: var(--muted);
+}
+/* Janela de aviso: mesma paleta noturna e bordas retas da lua pixelada. */
+body.notice-open {
+  overflow: hidden;
+}
+.age-notice {
+  width: min(560px, calc(100% - 32px));
+  max-height: calc(100dvh - 32px);
+  padding: clamp(24px, 5vw, 44px);
+  overflow-y: auto;
+  background: var(--night);
+  color: var(--text);
+  border: 1px solid var(--accent);
+  box-shadow: 8px 8px 0 #2b253d;
+}
+.age-notice::backdrop {
+  background: #080910ed;
+  backdrop-filter: blur(6px);
+}
+.age-notice .eyebrow {
+  margin-top: 0;
+  letter-spacing: 2px;
+}
+.age-badge {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 18px;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  font: 56px/1 'Pixeboy', monospace;
+}
+.age-notice h2 {
+  font: 400 clamp(32px, 7vw, 44px)/1.1 'Pixeboy', monospace;
+  letter-spacing: 0;
+  margin: 28px 0 20px;
+}
+.age-notice > p:not(.eyebrow) {
+  font-size: 17px;
+  line-height: 1.7;
+}
+.age-notice .age-note {
+  color: var(--muted);
+  font: 12px/1.6 monospace;
+}
+.age-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 22px;
+  margin-top: 28px;
+  text-align: center;
+  font: 13px/1.6 monospace;
+}
+.age-actions button {
+  padding: 16px;
+  border: 1px solid var(--accent);
+  border-radius: 0;
+  background: var(--accent);
+  color: var(--night);
+  font: inherit;
+  cursor: pointer;
+}
+.age-actions button:hover {
+  background: #e9dfff;
+}
+.age-actions button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
 }
 @media (max-width: 600px) {
   .blog-header,
