@@ -87,6 +87,10 @@ h1 span {
   display: inline-block;
   font: 13px/1.8 monospace;
 }
+.read-link-next {
+  font: 13px/1.8 monospace;
+  text-align: center;
+}
 article {
   padding: 52px 0 72px;
   border-top: 1px solid #353746;
@@ -106,6 +110,13 @@ h2 {
   margin: 18px 0;
   font: 400 clamp(40px, 8vw, 64px)/1.15 Georgia, 'Times New Roman', serif;
   letter-spacing: -2px;
+}
+/* Capítulo com metade do tamanho responsivo do título principal do conto. */
+#capitulo-style {
+  text-align: center;
+  font-size: clamp(20px, 4vw, 32px);
+  line-height: 1.3;
+  letter-spacing: -1px;
 }
 .content-rating {
   display: inline-block;
@@ -127,6 +138,20 @@ h2 {
 footer {
   border-top: 1px solid #353746;
   color: var(--muted);
+}
+/* Links de leitura em lados opostos, inclusive nas telas estreitas. */
+.chapter-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.chapter-navigation > a {
+  min-width: 0;
+}
+.chapter-navigation .read-link-next {
+  margin-left: auto;
+  text-align: right;
 }
 /* Janela de aviso: mesma paleta noturna e bordas retas da lua pixelada. */
 body.notice-open {
@@ -215,4 +240,93 @@ body.notice-open {
   .eyebrow {
     letter-spacing: 2px;
   }
+}
+
+/* Pedido de apoio entre episódios, com a mesma identidade noturna do Blog. */
+.support-option {
+  padding: 28px 0;
+  margin: 28px 0;
+  border-top: 1px solid #353746;
+}
+.support-option h2 {
+  font: 400 clamp(26px, 5vw, 36px)/1.2 Georgia, 'Times New Roman', serif;
+  letter-spacing: -1px;
+}
+.share-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.share-actions a,
+.share-actions button {
+  padding: 12px 16px;
+  border: 1px solid var(--accent);
+  border-radius: 0;
+  background: transparent;
+  color: var(--accent);
+  font: 13px/1.6 monospace;
+  text-decoration: none;
+  cursor: pointer;
+}
+.share-actions [hidden] {
+  display: none;
+}
+.share-actions a:hover,
+.share-actions button:hover {
+  background: #d5c4fa15;
+}
+.share-actions button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+.support-copy .support-status {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font: 12px/1.7 monospace;
+}
+#shareFallback {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  background: var(--night);
+  color: var(--text);
+  border: 1px solid var(--accent);
+  font: 14px/1.6 monospace;
+}
+.pix-area {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+}
+.pix-placeholder {
+  width: 176px;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed var(--muted);
+  color: var(--muted);
+  font: 13px/1.8 monospace;
+}
+.pix-placeholder > span:first-child {
+  font-size: 28px;
+}
+.pix-key {
+  overflow-wrap: anywhere;
+  color: var(--accent);
+}
+
+/* Mantém o contador ao lado do último controle de compartilhamento. */
+.share-last-action {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 100%;
+}
+.share-count {
+  max-width: 180px;
+  color: var(--muted);
+  font: 12px/1.6 monospace;
 }
