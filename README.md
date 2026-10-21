@@ -337,7 +337,7 @@ as trocas rápidas e o comportamento com movimento reduzido.
 Encerre a prévia com `Ctrl+C` no terminal. Esses utilitários não são carregados
 pelo site e não são necessários para abrir o HTML diretamente.
 
-## Blogue Boa noite
+## Blog Boa noite
 
 O Projeto 01 abre `boa-noite.html`; os projetos 02 e 03 continuam como exemplos.
 O título fica em `siteContent.projects[0].title`, e o destino em
@@ -345,7 +345,7 @@ O título fica em `siteContent.projects[0].title`, e o destino em
 fica em `translations['pt-BR'].desc1` (e nas versões `en` e `es`). O link usa
 `readBlog` nas três traduções. O conto permanece no idioma original, português.
 
-Para preencher a descrição do blogue, edite o parágrafo vazio
+Para preencher a descrição do Blog, edite o parágrafo vazio
 `<p id="blogDescription" class="blog-description"></p>` em `boa-noite.html`.
 O conto está nos parágrafos dentro de `<div class="story-body">` no mesmo
 arquivo. O nome do autor continua vindo de `siteContent.name`.

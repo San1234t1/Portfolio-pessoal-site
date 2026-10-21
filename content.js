@@ -38,7 +38,7 @@ const siteContent = {
     },
     "project1": {
       "src": "",
-      "alt": "Capa do blogue Boa noite"
+      "alt": "Capa do Blog Boa noite"
     },
     "project2": {
       "src": "",
@@ -96,10 +96,10 @@ const translations = {
     "tab1": "✦ Projeto 01",
     "tab2": "✦ Projeto 02",
     "tab3": "✦ Projeto 03",
-    "category1": "● Escrita / Blogue pessoal",
+    "category1": "● Escrita / Blog pessoal",
     "category2": "● Conceito / Experiência web",
     "category3": "● Conceito / Identidade & digital",
-    "desc1": "Escritor - Boa noite, blogue pessoal de contos",
+    "desc1": "Escritor - Boa noite, Blog pessoal de contos",
     "desc2": "Um conceito de onboarding que aproxima pessoas, ferramentas e primeiras descobertas.",
     "desc3": "Um estudo visual sobre marcas flexíveis e experiências digitais cheias de personalidade.",
     "view": "Explorar projeto ↗",
@@ -120,7 +120,7 @@ const translations = {
     "caseStudy": "Projeto conceitual / modelo de apresentação",
     "casePlaceholder": "Espaço para imagens e processo do projeto",
     "caseNote": "Conte sua história aqui: contexto, desafio, processo e resultado.",
-    "readBlog": "Ler o blogue ↗"
+    "readBlog": "Ler o Blog ↗"
   },
   "en": {
     "home": "✦ Home",
