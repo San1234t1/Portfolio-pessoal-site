@@ -340,7 +340,7 @@ fica em `translations['pt-BR'].desc1` (e nas versões `en` e `es`). O link usa
 
 Para editar a descrição do Blog, altere o texto do parágrafo `id="blogDescription"`
 em `blog/index.html`. O conto está nos parágrafos dentro de
-`<div class="story-body">` em `blog/o-viajante.html`. O nome do autor continua vindo de `siteContent.name`.
+`<div class="story-body">` em `blog/O viajante/o-viajante.html`. O nome do autor continua vindo de `siteContent.name`.
 
 As cores da página ficam nas variáveis `--night`, `--text`, `--muted` e
 `--accent` em `blog/blog.css`. A lua decorativa é um SVG em grade pixelada no HTML,
@@ -349,7 +349,7 @@ sem arquivo de imagem ou geração por IA. Sua posição e opacidade ficam em
 
 As observações de continuidade e narrativa estão em `work/revisao-o-viajante.md`.
 
-Os arquivos próprios do Blog ficam na pasta `blog/`: `index.html` (apresentação e chamada do conto), `o-viajante.html` (conto),
+Os arquivos próprios do Blog ficam na pasta `blog/`: `index.html` (apresentação e chamada do conto), `O viajante/o-viajante.html` (conto),
 `blog.css` (aparência) e `blog.js` (comportamento). O conteúdo de identidade
 continua compartilhado em `../content.js`, e a fonte em `../fonts/Pixeboy.ttf`.
 
@@ -357,7 +357,7 @@ continua compartilhado em `../content.js`, e a fonte em `../fonts/Pixeboy.ttf`.
 
 O aviso de recomendação de 18 anos aparece somente na entrada da página inicial
 do Blog. Não aparece nos contos nem no retorno deles à página inicial.
-Os links de retorno usam `index.html?origem=conto`; preserve esse parâmetro.
+Os links de retorno dos contos usam `../index.html?origem=conto`; preserve esse parâmetro.
 O botão Voltar do navegador também não reabre o aviso.
 Edite os textos no bloco `id="ageNotice"` de `blog/index.html`.
 A aparência fica nas regras `.age-notice` de `blog/blog.css`.
@@ -367,3 +367,24 @@ ao portfólio. A recomendação é editorial e não verifica a idade do visitant
 A indicação `+18` fica abaixo do título, na chamada da página inicial e na
 página do conto. Edite o parágrafo `.content-rating` em cada HTML para alterá-la;
 sua aparência fica em `blog/blog.css`. Basta salvar e recarregar.
+
+O subtítulo de capítulo `h2#capitulo-style` tem regra própria em `blog/blog.css`:
+`font-size: clamp(20px, 4vw, 32px)`, metade do tamanho do título `.story-title`.
+
+### Próximo episódio e pedido de apoio
+
+`blog/O viajante/Pagina de apelo.html` é o destino de “Próximo episódio”. Por enquanto,
+exibe o pedido de apoio no bloco `.support-copy`. Substitua esse bloco pelo novo
+texto quando estiver pronto. O primeiro conto permanece intacto.
+
+Para configurar o Pix, substitua o texto “Em breve” no parágrafo `.pix-key` pela
+sua chave. Coloque o QR code fornecido por você em `images/` e troque o bloco
+`.pix-placeholder` por, por exemplo:
+`<img src="../../images/pix.png" alt="QR code para doação via Pix" width="176" height="176">`.
+Os espaços atuais são reservados e ainda não permitem doar.
+
+O compartilhamento fica em `blog/apoio.js`: WhatsApp, Telegram, Instagram e cópia. O botão do Instagram copia o texto e abre a rede social. O menu
+de apps foi substituído pelo Instagram. Na prévia local, compartilha apenas
+a indicação do conto; com endereço público, inclui o link do primeiro episódio.
+O contador ao lado do último botão registra compartilhamentos iniciados neste navegador, incluindo cópias concluídas. Não confirma publicações nem soma visitantes. A contagem fica no armazenamento local; se bloqueado, dura só nesta abertura. Não há registro de doações no site.
+Salve e recarregue para conferir as alterações.
