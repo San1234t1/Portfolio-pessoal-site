@@ -73,6 +73,9 @@ function displaySiteIdentity() {
     const projectIndex = Number(heading.dataset.projectTitle);
     heading.textContent = siteContent.projects[projectIndex].title;
   });
+  document.querySelectorAll('[data-project-link]').forEach((link) => {
+    link.href = siteContent.projects[Number(link.dataset.projectLink)].url;
+  });
 }
 
 function setLanguage(requestedLanguage) {

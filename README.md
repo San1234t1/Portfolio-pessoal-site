@@ -336,3 +336,23 @@ Os utilitários de conferência ficam em `work/`. Se tiver Node.js instalado,
 as trocas rápidas e o comportamento com movimento reduzido.
 Encerre a prévia com `Ctrl+C` no terminal. Esses utilitários não são carregados
 pelo site e não são necessários para abrir o HTML diretamente.
+
+## Blogue Boa noite
+
+O Projeto 01 abre `boa-noite.html`; os projetos 02 e 03 continuam como exemplos.
+O título fica em `siteContent.projects[0].title`, e o destino em
+`siteContent.projects[0].url`, dentro de `content.js`. A descrição do cartão
+fica em `translations['pt-BR'].desc1` (e nas versões `en` e `es`). O link usa
+`readBlog` nas três traduções. O conto permanece no idioma original, português.
+
+Para preencher a descrição do blogue, edite o parágrafo vazio
+`<p id="blogDescription" class="blog-description"></p>` em `boa-noite.html`.
+O conto está nos parágrafos dentro de `<div class="story-body">` no mesmo
+arquivo. O nome do autor continua vindo de `siteContent.name`.
+
+As cores da página ficam nas variáveis `--night`, `--text`, `--muted` e
+`--accent` em `blog.css`. A lua decorativa é um SVG em grade pixelada no HTML,
+sem arquivo de imagem ou geração por IA. Sua posição e opacidade ficam em
+`.moon`, no CSS. Basta salvar e recarregar o navegador para ver as alterações.
+
+As observações de continuidade e narrativa estão em `work/revisao-o-viajante.md`.
