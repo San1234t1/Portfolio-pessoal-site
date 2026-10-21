@@ -11,9 +11,10 @@ const siteContent = {
   "copyrightYear": 2026,
   "projects": [
     {
-      "title": "Tandem",
+      "title": "Boa noite",
       "descriptionKey": "desc1",
-      "imageKey": "project1"
+      "imageKey": "project1",
+      "url": "boa-noite.html"
     },
     {
       "title": "Forge",
@@ -37,7 +38,7 @@ const siteContent = {
     },
     "project1": {
       "src": "",
-      "alt": "Capa do projeto Tandem"
+      "alt": "Capa do blogue Boa noite"
     },
     "project2": {
       "src": "",
@@ -95,16 +96,16 @@ const translations = {
     "tab1": "✦ Projeto 01",
     "tab2": "✦ Projeto 02",
     "tab3": "✦ Projeto 03",
-    "category1": "● Conceito / Produto digital",
+    "category1": "● Escrita / Blogue pessoal",
     "category2": "● Conceito / Experiência web",
     "category3": "● Conceito / Identidade & digital",
-    "desc1": "Uma ideia para transformar contas compartilhadas em uma experiência mais simples e humana.",
+    "desc1": "Escritor - Boa noite, blogue pessoal de contos",
     "desc2": "Um conceito de onboarding que aproxima pessoas, ferramentas e primeiras descobertas.",
     "desc3": "Um estudo visual sobre marcas flexíveis e experiências digitais cheias de personalidade.",
     "view": "Explorar projeto ↗",
     "cover": "Imagem do projeto",
     "imageHint": "Espaço reservado · adicione sua imagem",
-    "demo": "Projetos e textos ilustrativos — personalize com seu trabalho.",
+    "demo": "Os projetos 02 e 03 e seus textos são ilustrativos — personalize com seu trabalho.",
     "offscript": "ideias fora do roteiro ✳",
     "playTitle": "Um espaço para experimentar.",
     "experiment1": "Estudo visual",
@@ -118,7 +119,8 @@ const translations = {
     "back": "Voltar ao topo ↑",
     "caseStudy": "Projeto conceitual / modelo de apresentação",
     "casePlaceholder": "Espaço para imagens e processo do projeto",
-    "caseNote": "Conte sua história aqui: contexto, desafio, processo e resultado."
+    "caseNote": "Conte sua história aqui: contexto, desafio, processo e resultado.",
+    "readBlog": "Ler o blogue ↗"
   },
   "en": {
     "home": "✦ Home",
@@ -150,16 +152,16 @@ const translations = {
     "tab1": "✦ Project 01",
     "tab2": "✦ Project 02",
     "tab3": "✦ Project 03",
-    "category1": "● Concept / Digital product",
+    "category1": "● Writing / Personal blog",
     "category2": "● Concept / Web experience",
     "category3": "● Concept / Identity & digital",
-    "desc1": "An idea to make shared expenses a simpler, more human experience.",
+    "desc1": "Writer - Boa noite, a personal short-story blog",
     "desc2": "An onboarding concept that connects people, tools, and first discoveries.",
     "desc3": "A visual exploration of flexible brands and digital experiences full of personality.",
     "view": "Explore project ↗",
     "cover": "Project image",
     "imageHint": "Reserved space · add your image",
-    "demo": "Illustrative projects and copy — personalize with your work.",
+    "demo": "Projects 02 and 03 and their copy are illustrative — personalize with your work.",
     "offscript": "ideas off the script ✳",
     "playTitle": "A little room to experiment.",
     "experiment1": "Visual study",
@@ -173,7 +175,8 @@ const translations = {
     "back": "Back to top ↑",
     "caseStudy": "Concept project / presentation template",
     "casePlaceholder": "Space for project images and process",
-    "caseNote": "Tell your story here: context, challenge, process, and outcome."
+    "caseNote": "Tell your story here: context, challenge, process, and outcome.",
+    "readBlog": "Read the blog ↗"
   },
   "es": {
     "home": "✦ Inicio",
@@ -205,16 +208,16 @@ const translations = {
     "tab1": "✦ Proyecto 01",
     "tab2": "✦ Proyecto 02",
     "tab3": "✦ Proyecto 03",
-    "category1": "● Concepto / Producto digital",
+    "category1": "● Escritura / Blog personal",
     "category2": "● Concepto / Experiencia web",
     "category3": "● Concepto / Identidad y digital",
-    "desc1": "Una idea para convertir los gastos compartidos en una experiencia más sencilla y humana.",
+    "desc1": "Escritor - Boa noite, blog personal de cuentos",
     "desc2": "Un concepto de onboarding que conecta personas, herramientas y primeros descubrimientos.",
     "desc3": "Un estudio visual sobre marcas flexibles y experiencias digitales llenas de personalidad.",
     "view": "Explorar proyecto ↗",
     "cover": "Imagen del proyecto",
     "imageHint": "Espacio reservado · añade tu imagen",
-    "demo": "Proyectos y textos ilustrativos — personalízalos con tu trabajo.",
+    "demo": "Los proyectos 02 y 03 y sus textos son ilustrativos — personalízalos con tu trabajo.",
     "offscript": "ideas fuera del guion ✳",
     "playTitle": "Un espacio para experimentar.",
     "experiment1": "Estudio visual",
@@ -228,6 +231,7 @@ const translations = {
     "back": "Volver arriba ↑",
     "caseStudy": "Proyecto conceptual / plantilla de presentación",
     "casePlaceholder": "Espacio para imágenes y proceso del proyecto",
-    "caseNote": "Cuenta tu historia aquí: contexto, desafío, proceso y resultado."
+    "caseNote": "Cuenta tu historia aquí: contexto, desafío, proceso y resultado.",
+    "readBlog": "Leer el blog ↗"
   }
 };
