@@ -112,7 +112,7 @@ h2 {
   letter-spacing: -2px;
 }
 /* Capítulo com metade do tamanho responsivo do título principal do conto. */
-#capitulo-style {
+.capitulo-style {
   text-align: center;
   font-size: clamp(20px, 4vw, 32px);
   line-height: 1.3;
@@ -240,6 +240,11 @@ body.notice-open {
   .eyebrow {
     letter-spacing: 2px;
   }
+}
+
+.censurado {
+  background-color: #dbc7c7;
+  color: #dbc7c7;
 }
 
 /* Pedido de apoio entre episódios, com a mesma identidade noturna do Blog. */
